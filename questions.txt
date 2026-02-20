@@ -1,0 +1,4 @@
+if you don't have enough food and decide to starve do you lose all your food?
+xchange c code up to 10 people can hunt instead of current 7 limit
+you should never pass on placement if you have people
+xmake tools increase the smallest tool

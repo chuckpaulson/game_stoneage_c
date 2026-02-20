@@ -1,0 +1,938 @@
+======================================================================
+  STONE AGE TRACE — 2p  seed=42
+======================================================================
+
+INITIAL STATE:
+  P0: res=w0c0s0g0  food=12  score=0  fig=5/5  tools=[0, 0, 0]  agri=0  cards=0  bldgs=0
+  P1: res=w0c0s0g0  food=12  score=0  fig=5/5  tools=[0, 0, 0]  agri=0  cards=0  bldgs=0
+  Supply: w=28 c=18 s=12 g=10
+  Civ cards (32 in deck): [4] Shamans×1/dice→stone  [3] ToolMkrs×2/potp  [2] ToolMkrs×2/potp  [1] Farmers×1/agri+1
+  Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 0   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Farmers×1/agri+1  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place ToolMaker  (16 legal)
+    P1: place Field  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1] ToolMkr[p1:1] Field[p1:1]
+      auto P1: Field → +1agri, ToolMaker → tools=[1, 0, 0]
+    ⚄ 1d6 → sum 1
+    P1: use tool[0]  (2 legal)  dice→2
+    P1: done (tools)  (2÷3 = 0 wood)  → p1(-4food)
+      auto P0: fed 5food
+  ── end of round 0 ──
+    P0: res=w0c0s0g0  food=7  score=0  fig=5/5  tools=[0, 0, 0]  agri=0  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=8  score=0  fig=5/5  tools=[1, 0, 0]  agri=1  cards=0  bldgs=0
+    Supply: w=28 c=18 s=12 g=10
+    Civ cards (32 in deck): [4] Shamans×1/dice→stone  [3] ToolMkrs×2/potp  [2] ToolMkrs×2/potp  [1] Farmers×1/agri+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 1   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 1 on Forest  (35 legal)
+    P0: place 5 on Quarry  (30 legal)
+    P1: place Card [1] Farmers×1/agri+1  (22 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (18 legal)
+    P1: place ToolMaker  (14 legal)
+    P1: place Field  (9 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1] Quarry[p0:5] ToolMkr[p1:1] Field[p1:1]
+      auto P1: Field → +1agri, ToolMaker → tools=[1, 1, 0]
+    ⚄ 1d6 → sum 4
+    P1: use tool[1]  (3 legal)  dice→5
+    P1: use tool[0]  (2 legal)  dice→6
+    P1: done (tools)  (6÷3 = 2 wood)  → p1(+2w)
+    P1: pay 1w for card [1] Farmers×1/agri+1  → p1(-1w,+1agri)
+    ⚄ 5d6 → sum 20
+    P0: done (tools)  (20÷5 = 4 stone)  → p0(+4s,-5food)
+      auto P1: fed 2food
+  ── end of round 1 ──
+    P0: res=w0c0s4g0  food=2  score=0  fig=5/5  tools=[0, 0, 0]  agri=0  cards=0  bldgs=0
+    P1: res=w1c0s0g0  food=6  score=0  fig=5/5  tools=[1, 1, 0]  agri=3  cards=1  bldgs=0
+    Supply: w=27 c=18 s=8 g=10
+    Civ cards (31 in deck): [4] Weaving/food+1  [3] Shamans×1/dice→stone  [2] ToolMkrs×2/potp  [1] ToolMkrs×2/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 2   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] ToolMkrs×2/potp  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Shamans×1/dice→stone  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 4
+    P1: done (tools)  (3 legal)  (4÷3 = 1 wood)  → p1(+1w)
+    P1: pay 1w for card [1] ToolMkrs×2/potp  → p1(-1w)
+    ⚄ potp die → clay
+    ⚄ potp die → gold
+    P1: pick potp bonus #1  (2 legal)  → p1(+1g)
+    P0: pick potp bonus #0  → p0(+1c,-2food)
+  ── FEED ──
+    P0: feed penalty (-10)  (3 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 2 ──
+    P0: res=w0c1s4g0  food=0  score=-10  fig=5/5  tools=[0, 0, 0]  agri=0  cards=0  bldgs=0
+    P1: res=w1c0s0g1  food=4  score=0  fig=5/5  tools=[1, 1, 0]  agri=3  cards=2  bldgs=0
+    Supply: w=27 c=17 s=8 g=9
+    Civ cards (30 in deck): [4] Farmers×2/food+3  [3] Weaving/food+1  [2] Shamans×1/dice→stone  [1] ToolMkrs×2/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 3   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (19 legal)
+    P1: place Card [1] ToolMkrs×2/potp  (15 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (3 legal)  dice→8
+    P1: use tool[1]  (2 legal)  dice→9
+    P1: done (tools)  (9÷4 = 2 clay)  → p1(+2c)
+    P1: pay 1c for card [1] ToolMkrs×2/potp  (3 legal)  → p1(-1c)
+    ⚄ potp die → agri
+    ⚄ potp die → tool
+    P1: pick potp bonus #1  (2 legal)  → p1(tools→[1, 1, 1])
+    P0: pick potp bonus #0  → p0(+1agri)
+    ⚄ 5d6 → sum 9
+    P0: done (tools)  (9÷3 = 3 wood)  → p0(+3w)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 3 ──
+    P0: res=w3c1s4g0  food=0  score=-20  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w1c1s0g1  food=2  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=3  bldgs=0
+    Supply: w=24 c=16 s=8 g=9
+    Civ cards (29 in deck): [4] Builders×2/food+2  [3] Farmers×2/food+3  [2] Weaving/food+1  [1] Shamans×1/dice→stone
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 4   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Shamans×1/dice→stone  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Farmers×2/food+3  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 1
+    P1: done (tools)  (4 legal)  (1÷3 = 0 wood)
+    P1: pay 1w+1c+1g for card [3] Farmers×2/food+3  → p1(-1w,-1c,-1g,+3food)
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 4 ──
+    P0: res=w3c1s4g0  food=0  score=-30  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=3  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=4  bldgs=0
+    Supply: w=25 c=17 s=8 g=10
+    Civ cards (28 in deck): [4] Transport/stone×2  [3] Builders×2/food+2  [2] Weaving/food+1  [1] Shamans×1/dice→stone
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 5   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (19 legal)
+    P1: place Card [1] Shamans×1/dice→stone  (15 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (4 legal)  dice→8
+    P1: use tool[2]  (3 legal)  dice→9
+    P1: use tool[1]  (2 legal)  dice→10
+    P1: done (tools)  (10÷4 = 2 clay)  → p1(+2c)
+    P1: pay 1c for card [1] Shamans×1/dice→stone  → p1(-1c)
+    ⚄ card 2d6 → sum 9  → p1(+1s)
+    ⚄ 5d6 → sum 23
+    P0: done (tools)  (23÷3 = 7 wood)  → p0(+7w)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 5 ──
+    P0: res=w10c1s4g0  food=0  score=-40  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s1g0  food=1  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=5  bldgs=0
+    Supply: w=18 c=16 s=7 g=10
+    Civ cards (27 in deck): [4] Shamans×1/gold+1  [3] Transport/stone×2  [2] Builders×2/food+2  [1] Weaving/food+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 6   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (26 legal)
+    P1: place Card [1] Weaving/food+1  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Transport/stone×2  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 4
+    P1: done (tools)  (4 legal)  (4÷3 = 1 wood)  → p1(+1w)
+    P1: pay 1w+1c+1s for card [3] Transport/stone×2  → p1(-1w,-1c,+1s)
+    P1: pay 1s for card [1] Weaving/food+1  → p1(-1s,+1food)
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 6 ──
+    P0: res=w10c1s4g0  food=0  score=-50  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s1g0  food=0  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=7  bldgs=0
+    Supply: w=18 c=17 s=7 g=10
+    Civ cards (25 in deck): [4] Writing/free  [3] Medicine/food+5  [2] Shamans×1/gold+1  [1] Builders×2/food+2
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 7   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Card [3] Medicine/food+5  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 8
+    P1: use tool[0]  (4 legal)  dice→9
+    P1: use tool[2]  (3 legal)  dice→10
+    P1: use tool[1]  (2 legal)  dice→11
+    P1: done (tools)  (11÷4 = 2 clay)  → p1(+2c)
+    P1: pay 2c+1s for card [3] Medicine/food+5  → p1(-2c,-1s,+5food)
+    ⚄ 5d6 → sum 15
+    P0: done (tools)  (15÷3 = 5 wood)  → p0(+5w)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 7 ──
+    P0: res=w15c1s4g0  food=0  score=-60  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=3  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=8  bldgs=0
+    Supply: w=13 c=17 s=8 g=10
+    Civ cards (24 in deck): [4] Pottery/food+7  [3] Writing/free  [2] Shamans×1/gold+1  [1] Builders×2/food+2
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 8   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Builders×2/food+2  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Writing/free  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 2
+    P1: done (tools)  (4 legal)  (2÷3 = 0 wood)
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 8 ──
+    P0: res=w15c1s4g0  food=0  score=-70  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=1  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=8  bldgs=0
+    Supply: w=13 c=17 s=8 g=10
+    Civ cards (24 in deck): [4] Pottery/food+7  [3] Writing/free  [2] Shamans×1/gold+1  [1] Builders×2/food+2
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 9   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Card [3] Writing/free  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 9
+    P1: use tool[0]  (4 legal)  dice→10
+    P1: use tool[2]  (3 legal)  dice→11
+    P1: use tool[1]  (2 legal)  dice→12
+    P1: done (tools)  (12÷4 = 3 clay)  → p1(+3c)
+    P1: pay 3c for card [3] Writing/free  → p1(-3c)
+    P1: take free card [1] Builders×2/food+2  (3 legal)  → p1(+2food)
+    ⚄ 5d6 → sum 19
+    P0: done (tools)  (19÷3 = 6 wood)  → p0(+6w)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 9 ──
+    P0: res=w21c1s4g0  food=0  score=-80  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=1  score=0  fig=5/5  tools=[1, 1, 1]  agri=3  cards=10  bldgs=0
+    Supply: w=7 c=17 s=8 g=10
+    Civ cards (22 in deck): [4] Art/tool+1  [3] ToolMkrs×1/ott(3)  [2] Pottery/food+7  [1] Shamans×1/gold+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 10   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Shamans×1/gold+1  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] ToolMkrs×1/ott(3)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 1
+    P1: done (tools)  (4 legal)  (1÷3 = 0 wood)
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+      auto P1: fed 1food
+    P1: feed penalty (-10)  → p1(-10pts)
+  ── end of round 10 ──
+    P0: res=w21c1s4g0  food=0  score=-90  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=0  score=-10  fig=5/5  tools=[1, 1, 1]  agri=3  cards=10  bldgs=0
+    Supply: w=7 c=17 s=8 g=10
+    Civ cards (22 in deck): [4] Art/tool+1  [3] ToolMkrs×1/ott(3)  [2] Pottery/food+7  [1] Shamans×1/gold+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 11   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Shamans×1/gold+1  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 5
+    P1: use tool[0]  (4 legal)  dice→6
+    P1: use tool[2]  (3 legal)  dice→7
+    P1: use tool[1]  (2 legal)  dice→8
+    P1: done (tools)  (8÷4 = 2 clay)  → p1(+2c)
+    P1: pay 1c for card [1] Shamans×1/gold+1  → p1(-1c,+1g)
+    ⚄ 5d6 → sum 13
+    P0: done (tools)  (13÷3 = 4 wood)  → p0(+4w)
+  ── FEED ──
+    P1: feed penalty (-10)  (3 legal)  → p1(-10pts)
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 11 ──
+    P0: res=w25c1s4g0  food=0  score=-100  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g1  food=0  score=-20  fig=5/5  tools=[1, 1, 1]  agri=3  cards=11  bldgs=0
+    Supply: w=3 c=16 s=8 g=9
+    Civ cards (21 in deck): [4] Writing/potp  [3] Art/tool+1  [2] ToolMkrs×1/ott(3)  [1] Pottery/food+7
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 12   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Pottery/food+7  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Art/tool+1  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 5
+    P1: done (tools)  (4 legal)  (5÷3 = 1 wood)  → p1(+1w)
+    P1: pay 1w+1c+1g for card [3] Art/tool+1  → p1(-1w,-1c,-1g,tools→[2, 1, 1])
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+    P1: feed penalty (-10)  → p1(-10pts)
+  ── end of round 12 ──
+    P0: res=w25c1s4g0  food=0  score=-110  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=0  score=-30  fig=5/5  tools=[2, 1, 1]  agri=3  cards=12  bldgs=0
+    Supply: w=3 c=17 s=8 g=10
+    Civ cards (20 in deck): [4] Builders×2/potp  [3] Writing/potp  [2] ToolMkrs×1/ott(3)  [1] Pottery/food+7
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 13   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Pottery/food+7  (19 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (15 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (4 legal)  dice→9
+    P1: use tool[2]  (3 legal)  dice→10
+    P1: use tool[1]  (2 legal)  dice→11
+    P1: done (tools)  (11÷4 = 2 clay)  → p1(+2c)
+    P1: pay 1c for card [1] Pottery/food+7  → p1(-1c,+7food)
+    ⚄ 5d6 → sum 15
+    P0: done (tools)  (15÷3 = 5 wood)  → p0(+3w)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+  ── end of round 13 ──
+    P0: res=w28c1s4g0  food=0  score=-120  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=5  score=-30  fig=5/5  tools=[2, 1, 1]  agri=3  cards=13  bldgs=0
+    Supply: w=0 c=16 s=8 g=10
+    Civ cards (19 in deck): [4] ToolMkrs×2/tool+2  [3] Builders×2/potp  [2] Writing/potp  [1] ToolMkrs×1/ott(3)
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 14   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] ToolMkrs×1/ott(3)  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Builders×2/potp  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 2
+    P1: done (tools)  (4 legal)  (2÷3 = 0 wood)
+    P1: pay 1c for card [1] ToolMkrs×1/ott(3)  → p1(-1c)
+  ── FEED ──
+    P0: feed penalty (-10)  (4 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 14 ──
+    P0: res=w28c1s4g0  food=0  score=-130  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=3  score=-30  fig=5/5  tools=[2, 1, 1]  agri=3  cards=14  bldgs=0  ot=[3]
+    Supply: w=0 c=17 s=8 g=10
+    Civ cards (18 in deck): [4] Builders×3/pts+3  [3] ToolMkrs×2/tool+2  [2] Builders×2/potp  [1] Writing/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 15   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Writing/potp  (19 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (15 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 4
+    P1: use one-time tool[0]  (5 legal)  dice→7
+    P1: use tool[0]  (4 legal)  dice→9
+    P1: use tool[2]  (3 legal)  dice→10
+    P1: use tool[1]  (2 legal)  dice→11
+    P1: done (tools)  (11÷4 = 2 clay)  → p1(+2c)
+    P1: pay 1c for card [1] Writing/potp  → p1(-1c)
+    ⚄ potp die → gold
+    ⚄ potp die → tool
+    P1: pick potp bonus #1  (2 legal)  → p1(tools→[2, 2, 1])
+    P0: pick potp bonus #0  → p0(+1g)
+    ⚄ 5d6 → sum 16
+    P0: done (tools)  (16÷3 = 5 wood)
+  ── FEED ──
+      auto P1: fed 2food
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 15 ──
+    P0: res=w28c1s4g1  food=0  score=-140  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=1  score=-30  fig=5/5  tools=[2, 2, 1]  agri=3  cards=15  bldgs=0
+    Supply: w=0 c=16 s=8 g=9
+    Civ cards (17 in deck): [4] Time/potp  [3] Builders×3/pts+3  [2] ToolMkrs×2/tool+2  [1] Builders×2/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 16   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Builders×2/potp  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Builders×3/pts+3  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 2
+    P1: done (tools)  (4 legal)  (2÷3 = 0 wood)
+    P1: pay 1c for card [1] Builders×2/potp  → p1(-1c)
+    ⚄ potp die → gold
+    ⚄ potp die → stone
+    P1: pick potp bonus #1  (2 legal)  → p1(+1s)
+    P0: pick potp bonus #0  → p0(+1g)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+      auto P1: fed 1food
+    P1: feed penalty (-10)  (2 legal)  → p1(-10pts)
+  ── end of round 16 ──
+    P0: res=w28c1s4g2  food=0  score=-150  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s1g0  food=0  score=-40  fig=5/5  tools=[2, 2, 1]  agri=3  cards=16  bldgs=0
+    Supply: w=0 c=17 s=7 g=8
+    Civ cards (16 in deck): [4] Weaving/food+3  [3] Time/potp  [2] Builders×3/pts+3  [1] ToolMkrs×2/tool+2
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 17   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Card [3] Time/potp  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 3
+    P1: use tool[0]  (4 legal)  dice→5
+    P1: use tool[2]  (3 legal)  dice→6
+    P1: use tool[1]  (2 legal)  dice→8
+    P1: done (tools)  (8÷4 = 2 clay)  → p1(+2c)
+    P1: pay 2c+1s for card [3] Time/potp  → p1(-2c,-1s)
+    ⚄ potp die → stone
+    ⚄ potp die → clay
+    P1: pick potp bonus #1  (2 legal)  → p1(+1c)
+    P0: pick potp bonus #0  → p0(+1s)
+    ⚄ 5d6 → sum 28
+    P0: done (tools)  (28÷3 = 9 wood)
+  ── FEED ──
+    P1: feed penalty (-10)  (2 legal)  → p1(-10pts)
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 17 ──
+    P0: res=w28c1s5g2  food=0  score=-160  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=0  score=-50  fig=5/5  tools=[2, 2, 1]  agri=3  cards=17  bldgs=0
+    Supply: w=0 c=16 s=7 g=8
+    Civ cards (15 in deck): [4] Shamans×2/clay+1  [3] Weaving/food+3  [2] Builders×3/pts+3  [1] ToolMkrs×2/tool+2
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 18   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] ToolMkrs×2/tool+2  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Weaving/food+3  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 4
+    P1: done (tools)  (4 legal)  (4÷3 = 1 wood)
+    P1: pay 1c for card [1] ToolMkrs×2/tool+2  → p1(-1c,tools→[3, 2, 2])
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+    P1: feed penalty (-10)  → p1(-10pts)
+  ── end of round 18 ──
+    P0: res=w28c1s5g2  food=0  score=-170  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=0  score=-60  fig=5/5  tools=[3, 2, 2]  agri=3  cards=18  bldgs=0
+    Supply: w=0 c=17 s=7 g=8
+    Civ cards (14 in deck): [4] Shamans×1/stone+1  [3] Shamans×2/clay+1  [2] Weaving/food+3  [1] Builders×3/pts+3
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 19   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Builders×3/pts+3  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 5
+    P1: use tool[0]  (4 legal)  dice→8
+    P1: use tool[2]  (3 legal)  dice→10
+    P1: use tool[1]  (2 legal)  dice→12
+    P1: done (tools)  (12÷4 = 3 clay)  → p1(+3c)
+    P1: pay 1c for card [1] Builders×3/pts+3  → p1(-1c,+3pts)
+    ⚄ 5d6 → sum 17
+    P0: done (tools)  (17÷3 = 5 wood)
+  ── FEED ──
+    P1: feed penalty (-10)  (2 legal)  → p1(-10pts)
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 19 ──
+    P0: res=w28c1s5g2  food=0  score=-180  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c2s0g0  food=0  score=-67  fig=5/5  tools=[3, 2, 2]  agri=3  cards=19  bldgs=0
+    Supply: w=0 c=15 s=7 g=8
+    Civ cards (13 in deck): [4] Builders×1/food+4  [3] Shamans×1/stone+1  [2] Shamans×2/clay+1  [1] Weaving/food+3
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 20   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Weaving/food+3  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Shamans×1/stone+1  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 4
+    P1: done (tools)  (4 legal)  (4÷3 = 1 wood)
+    P1: pay 1c for card [1] Weaving/food+3  → p1(-1c,+3food)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+      auto P1: fed 2food
+  ── end of round 20 ──
+    P0: res=w28c1s5g2  food=0  score=-190  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=1  score=-67  fig=5/5  tools=[3, 2, 2]  agri=3  cards=20  bldgs=0
+    Supply: w=0 c=16 s=7 g=8
+    Civ cards (12 in deck): [4] Farmers×2/potp  [3] Builders×1/food+4  [2] Shamans×1/stone+1  [1] Shamans×2/clay+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 21   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Shamans×2/clay+1  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 6
+    P1: use tool[0]  (4 legal)  dice→9
+    P1: use tool[2]  (3 legal)  dice→11
+    P1: use tool[1]  (2 legal)  dice→13
+    P1: done (tools)  (13÷4 = 3 clay)  → p1(+3c)
+    P1: pay 1c for card [1] Shamans×2/clay+1
+    ⚄ 5d6 → sum 16
+    P0: done (tools)  (16÷3 = 5 wood)
+  ── FEED ──
+      auto P1: fed 1food
+    P1: feed penalty (-10)  (2 legal)  → p1(-10pts)
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 21 ──
+    P0: res=w28c1s5g2  food=0  score=-200  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c4s0g0  food=0  score=-77  fig=5/5  tools=[3, 2, 2]  agri=3  cards=21  bldgs=0
+    Supply: w=0 c=13 s=7 g=8
+    Civ cards (11 in deck): [4] Time/agri+1  [3] Farmers×2/potp  [2] Builders×1/food+4  [1] Shamans×1/stone+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 22   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Card [1] Shamans×1/stone+1  (26 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Farmers×2/potp  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 2
+    P1: done (tools)  (4 legal)  (2÷3 = 0 wood)
+    P1: pay 3c for card [3] Farmers×2/potp  → p1(-3c)
+    ⚄ potp die → clay
+    ⚄ potp die → agri
+    P1: pick potp bonus #1  (2 legal)  → p1(+1agri)
+    P0: pick potp bonus #0  → p0(+1c)
+    P1: pay 1c for card [1] Shamans×1/stone+1  → p1(-1c,+1s)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+    P1: feed with stone  (2 legal)  → p1(-1s)
+  ── end of round 22 ──
+    P0: res=w28c2s5g2  food=0  score=-210  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=0  score=-77  fig=5/5  tools=[3, 2, 2]  agri=4  cards=23  bldgs=0
+    Supply: w=0 c=16 s=7 g=8
+    Civ cards (9 in deck): [4] Medicine/any×2  [3] Transport/potp  [2] Time/agri+1  [1] Builders×1/food+4
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 23   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Builders×1/food+4  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 10
+    P1: use tool[0]  (4 legal)  dice→13
+    P1: use tool[2]  (3 legal)  dice→15
+    P1: use tool[1]  (2 legal)  dice→17
+    P1: done (tools)  (17÷4 = 4 clay)  → p1(+4c)
+    P1: pay 1c for card [1] Builders×1/food+4  → p1(-1c,+4food)
+    ⚄ 5d6 → sum 15
+    P0: done (tools)  (15÷3 = 5 wood)
+  ── FEED ──
+      auto P1: fed 1food
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 23 ──
+    P0: res=w28c2s5g2  food=0  score=-220  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c3s0g0  food=3  score=-77  fig=5/5  tools=[3, 2, 2]  agri=4  cards=24  bldgs=0
+    Supply: w=0 c=13 s=7 g=8
+    Civ cards (8 in deck): [4] Builders×1/potp  [3] Medicine/any×2  [2] Transport/potp  [1] Time/agri+1
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 24   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (26 legal)
+    P1: place Card [1] Time/agri+1  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Medicine/any×2  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 1
+    P1: use tool[0]  (4 legal)  dice→4
+    P1: use tool[2]  (3 legal)  dice→6
+    P1: use tool[1]  (2 legal)  dice→8
+    P1: done (tools)  (8÷3 = 2 wood)
+    P1: pay 3c for card [3] Medicine/any×2  → p1(-3c)
+    P1: take clay  (3 legal)  → p1(+1c)
+    P1: take clay  (3 legal)  → p1(+1c)
+    P1: pay 1c for card [1] Time/agri+1  → p1(-1c,+1agri)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 24 ──
+    P0: res=w28c2s5g2  food=0  score=-230  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=3  score=-77  fig=5/5  tools=[3, 2, 2]  agri=5  cards=26  bldgs=0
+    Supply: w=0 c=15 s=7 g=8
+    Civ cards (6 in deck): [4] Farmers×1/stone+1  [3] Pottery/potp  [2] Builders×1/potp  [1] Transport/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 25   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Transport/potp  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (4 legal)  dice→10
+    P1: use tool[2]  (3 legal)  dice→12
+    P1: use tool[1]  (2 legal)  dice→14
+    P1: done (tools)  (14÷4 = 3 clay)  → p1(+3c)
+    P1: pay 1c for card [1] Transport/potp  → p1(-1c)
+    ⚄ potp die → clay
+    ⚄ potp die → wood
+    P1: pick potp bonus #1  (2 legal)
+    P0: pick potp bonus #0  → p0(+1c)
+    ⚄ 5d6 → sum 16
+    P0: done (tools)  (16÷3 = 5 wood)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 25 ──
+    P0: res=w28c3s5g2  food=0  score=-240  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c3s0g0  food=3  score=-77  fig=5/5  tools=[3, 2, 2]  agri=5  cards=27  bldgs=0
+    Supply: w=0 c=12 s=7 g=8
+    Civ cards (5 in deck): [4] Farmers×1/potp  [3] Farmers×1/stone+1  [2] Pottery/potp  [1] Builders×1/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 26   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (26 legal)
+    P1: place Card [1] Builders×1/potp  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Farmers×1/stone+1  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 4
+    P1: use tool[0]  (4 legal)  dice→7
+    P1: use tool[1]  (3 legal)  dice→9
+    P1: use tool[2]  (2 legal)  dice→11
+    P1: done (tools)  (11÷3 = 3 wood)
+    P1: pay 3c for card [3] Farmers×1/stone+1  → p1(-3c,+1s)
+    P1: pay 1s for card [1] Builders×1/potp  → p1(-1s)
+    ⚄ potp die → clay
+    ⚄ potp die → clay
+    P1: pick potp bonus #1  (2 legal)  → p1(+1c)
+    P0: pick potp bonus #0  → p0(+1c)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 26 ──
+    P0: res=w28c4s5g2  food=0  score=-250  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c1s0g0  food=3  score=-77  fig=5/5  tools=[3, 2, 2]  agri=5  cards=29  bldgs=0
+    Supply: w=0 c=13 s=7 g=8
+    Civ cards (3 in deck): [4] Music/pts+3  [3] ToolMkrs×1/ott(4)  [2] Farmers×1/potp  [1] Pottery/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 27   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Card [1] Pottery/potp  (19 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (4 legal)  dice→10
+    P1: use tool[2]  (3 legal)  dice→12
+    P1: use tool[1]  (2 legal)  dice→14
+    P1: done (tools)  (14÷4 = 3 clay)  → p1(+3c)
+    P1: pay 1c for card [1] Pottery/potp  → p1(-1c)
+    ⚄ potp die → clay
+    ⚄ potp die → stone
+    P1: pick potp bonus #1  (2 legal)  → p1(+1s)
+    P0: pick potp bonus #0  → p0(+1c)
+    ⚄ 5d6 → sum 10
+    P0: done (tools)  (10÷3 = 3 wood)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 27 ──
+    P0: res=w28c5s5g2  food=0  score=-260  fig=5/5  tools=[0, 0, 0]  agri=1  cards=0  bldgs=0
+    P1: res=w0c3s1g0  food=3  score=-77  fig=5/5  tools=[3, 2, 2]  agri=5  cards=30  bldgs=0
+    Supply: w=0 c=10 s=6 g=8
+    Civ cards (2 in deck): [4] Art/dice→gold  [3] Music/pts+3  [2] ToolMkrs×1/ott(4)  [1] Farmers×1/potp
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 28   first=P0
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P0: pass (placement)  (35 legal)
+    P1: place 1 on Forest  (35 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (26 legal)
+    P1: place Card [1] Farmers×1/potp  (21 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (16 legal)
+    P1: place Card [3] Music/pts+3  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p1:1]
+    ⚄ 1d6 → sum 5
+    P1: use tool[0]  (4 legal)  dice→8
+    P1: use tool[1]  (3 legal)  dice→10
+    P1: use tool[2]  (2 legal)  dice→12
+    P1: done (tools)  (12÷3 = 4 wood)
+    P1: pay 3c for card [3] Music/pts+3  (2 legal)  → p1(-3c,+3pts)
+    P1: pay 1s for card [1] Farmers×1/potp  → p1(-1s)
+    ⚄ potp die → agri
+    ⚄ potp die → agri
+    P1: pick potp bonus #1  (2 legal)  → p1(+1agri)
+    P0: pick potp bonus #0  → p0(+1agri)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(-10pts)
+  ── end of round 28 ──
+    P0: res=w28c5s5g2  food=0  score=-270  fig=5/5  tools=[0, 0, 0]  agri=2  cards=0  bldgs=0
+    P1: res=w0c0s0g0  food=3  score=-74  fig=5/5  tools=[3, 2, 2]  agri=6  cards=32  bldgs=0
+    Supply: w=0 c=13 s=7 g=8
+    Civ cards (0 in deck): [4] Shamans×2/dice→wood  [3] Music/pts+3  [2] Art/dice→gold  [1] ToolMkrs×1/ott(4)
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+──────────────────────────────────────────────────────────────────────
+  ROUND 29   first=P1
+──────────────────────────────────────────────────────────────────────
+  ── PLACE ──
+    P1: place 2 on ClayPit  (35 legal)
+    P0: place 5 on Forest  (30 legal)
+    P1: place Bldg #1 (1w+2s→13pt)  (19 legal)
+    P1: place Card [1] ToolMkrs×1/ott(4)  (15 legal)
+    P1: place Bldg #0 (2w+1c→10pt)  (10 legal)
+  ── RESOLVE ──
+     Figures: Forest[p0:5] ClayPit[p1:2]
+    ⚄ 2d6 → sum 7
+    P1: use tool[0]  (4 legal)  dice→10
+    P1: use tool[2]  (3 legal)  dice→12
+    P1: use tool[1]  (2 legal)  dice→14
+    P1: done (tools)  (14÷4 = 3 clay)  → p1(+3c)
+    P1: pay 1c for card [1] ToolMkrs×1/ott(4)  → p1(-1c)
+    ⚄ 5d6 → sum 23
+    P0: done (tools)  (23÷3 = 7 wood)
+  ── FEED ──
+    P0: feed penalty (-10)  (5 legal)  → p0(+30pts)
+  ── GAME OVER ──
+      auto P1: +225pts
+  ── end of round 29 ──
+    P0: res=w28c5s5g2  food=0  score=-240  fig=0/5  tools=[0, 0, 0]  agri=2  cards=0  bldgs=0
+    P1: res=w0c2s0g0  food=3  score=151  fig=0/5  tools=[3, 2, 2]  agri=6  cards=33  bldgs=0  ot=[4]
+    Supply: w=0 c=11 s=7 g=8
+    Civ cards (0 in deck): [4] Shamans×2/dice→wood  [3] Music/pts+3  [2] Art/dice→gold  [1] ---
+    Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+
+======================================================================
+  GAME OVER — 357 moves, 66 chance outcomes, 423 steps
+======================================================================
+
+FINAL STATE:
+  P0: res=w28c5s5g2  food=0  score=-240  fig=0/5  tools=[0, 0, 0]  agri=2  cards=0  bldgs=0
+  P1: res=w0c2s0g0  food=3  score=151  fig=0/5  tools=[3, 2, 2]  agri=6  cards=33  bldgs=0  ot=[4]
+  Supply: w=0 c=11 s=7 g=8
+  Civ cards (0 in deck): [4] Shamans×2/dice→wood  [3] Music/pts+3  [2] Art/dice→gold  [1] ---
+  Buildings (6+6 in piles): #0: 2w+1c→10pt  #1: 1w+2s→13pt
+
+SCORING BREAKDOWN:
+  P0 scoring breakdown:
+    Green cards: none (0 pts)
+    Sand cards: none (0 pts)
+    Resources: 28w+5c+5s+2g = 40 pts
+    ────
+    In-game (buildings/card pts): -280
+    Green card sets:              0
+    Sand card multipliers:        0
+    Remaining resources:          40
+    TOTAL:                        -240
+
+  P1 scoring breakdown:
+    Green cards (14 types): Medicine/any×2, Medicine/food+5, Writing/free, Writing/potp, Time/agri+1, Time/potp, Pottery/food+7, Pottery/potp, Transport/potp, Transport/stone×2, Art/tool+1, Weaving/food+3, Weaving/food+1, Music/pts+3
+      set 1: 8 types (Pottery, Weaving, Art, Time, Transport, Music, Medicine, Writing) = 8×8 = 64
+      set 2: 6 types (Pottery, Weaving, Time, Transport, Medicine, Writing) = 6×6 = 36
+      Green total: 100 pts
+    Sand cards:
+      Farmers (agri=6):
+        Farmers×1/agri+1: 1×1×6 = 6
+        Farmers×2/potp: 1×2×6 = 12
+        Farmers×2/food+3: 1×2×6 = 12
+        Farmers×1/potp: 1×1×6 = 6
+        Farmers×1/stone+1: 1×1×6 = 6
+      ToolMakers (tools=7):
+        2× ToolMkrs×2/potp: 2×2×7 = 28
+        ToolMkrs×2/tool+2: 1×2×7 = 14
+        ToolMkrs×1/ott(4): 1×1×7 = 7
+        ToolMkrs×1/ott(3): 1×1×7 = 7
+      Builders (buildings=0):
+        Builders×3/pts+3: 1×3×0 = 0
+        Builders×2/potp: 1×2×0 = 0
+        Builders×2/food+2: 1×2×0 = 0
+        Builders×1/potp: 1×1×0 = 0
+        Builders×1/food+4: 1×1×0 = 0
+      Shamans (figures=5):
+        Shamans×2/clay+1: 1×2×5 = 10
+        Shamans×1/gold+1: 1×1×5 = 5
+        Shamans×1/dice→stone: 1×1×5 = 5
+        Shamans×1/stone+1: 1×1×5 = 5
+      Sand total: 123 pts
+    Resources: 2c = 2 pts
+    ────
+    In-game (buildings/card pts): -74
+    Green card sets:              100
+    Sand card multipliers:        123
+    Remaining resources:          2
+    TOTAL:                        151
+
+REWARDS: P0=-1.00  P1=+1.00
+WINNER:  P1
+

@@ -1,0 +1,5 @@
+checkpoints/
+*.so
+__pycache__
+*.log
+.DS_Store
